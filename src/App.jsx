@@ -1,4 +1,5 @@
 import "./App.css";
+import TodoMain from "./components/TodoMain";
 
 // Import Route and our components
 import { Route, Routes } from "react-router-dom";
@@ -18,6 +19,8 @@ export default function App () {
         <Route path="/price" element={<Price/>}/>
         <Route path="/price/:symbol" element={<Price/>}/>
       </Routes>
+
+      <TodoMain/>
     </div>
   );
 }
