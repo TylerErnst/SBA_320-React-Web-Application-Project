@@ -16,7 +16,7 @@ export default function App() {
     try {
       // Make fetch request and store the response
       const response = await fetch(
-        `http://pokeapi.co/api/v2/pokemon/${searchTerm}`
+        `https://pokeapi.co/api/v2/pokemon/${searchTerm}`
       );
       // Parse JSON response into a JavaScript object
       const data = await response.json();
