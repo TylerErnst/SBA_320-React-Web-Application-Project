@@ -7,6 +7,7 @@ import PokemonDisplay from "./components/PokemonDisplay";
 import Form from "./components/Form";
 import Navbar from "./components/Navbar";
 
+
 export default function App() {
 
   // State to hold pokemon data

@@ -1,3 +1,5 @@
+import Gallery from './Gallery'
+
 export default function MovieDisplay({ pokemon }){
   // Function to return loaded JSX
   const loaded = () => {
@@ -8,7 +10,7 @@ export default function MovieDisplay({ pokemon }){
         <h2>{pokemon.id}</h2>
         <h2>{pokemon.types[0].type.name}</h2>
         <img src={pokemon.sprites.front_default} alt='pokemon-picture' />
-        
+        <Gallery pokemon={pokemon}/>
       </>
     );
   };
