@@ -20,7 +20,7 @@ export default function App() {
       );
       // Parse JSON response into a JavaScript object
       const data = await response.json();
-      // Set the Movie state to the received data
+      // Set the Pokemon state to the received data
       setPokemon(data);
     } catch(e) {
       console.error(e)
@@ -32,8 +32,8 @@ export default function App() {
     getPokemon(Math.floor(Math.random() * 1025));
   }, []);
 
-  // We pass the getMovie function as a prop called moviesearch
-  // We pass movie as props to movie display
+  // We pass the getPokemon function as a prop called pokemonSearch
+  // We pass pokemon as props to pokemon display
   return (
     <div className="App">
       <Form pokemonSearch={getPokemon} />

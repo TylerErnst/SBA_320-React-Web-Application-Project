@@ -1,8 +1,5 @@
-# React + Vite
+This application utilizes pokeapi to get the data for each pokemon searched for. It will start out with a random pokemon and will change on each refresh.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Link to live site: https://sba-320-react-web-application-project.onrender.com/
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Will not deploy externally, only shows a black screen. But works fine locally.
