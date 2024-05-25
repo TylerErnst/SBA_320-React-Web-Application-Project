@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 
 // Import our components
-// import PokemonDisplay from "./components/PokemonDisplay";
+import PokemonDisplay from "./components/PokemonDisplay";
 import Form from "./components/Form";
 
 
