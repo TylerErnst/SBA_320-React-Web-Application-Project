@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
-import {BrowserRouter as Router,Routes, Route,Navigate} from 'react-router-dom';
 import "./App.css";
 
 // Import our components
 import PokemonDisplay from "./components/PokemonDisplay";
 import Form from "./components/Form";
-import Navbar from "./components/Navbar";
 
 
 export default function App() {
@@ -38,11 +36,6 @@ export default function App() {
   // We pass movie as props to movie display
   return (
     <div className="App">
-      <Navbar />     
-            <Routes>                                                                      
-               <Route path="/"/>
-            </Routes>    
-      
       <Form pokemonSearch={getPokemon} />
       <PokemonDisplay pokemon={pokemon} />
     </div>

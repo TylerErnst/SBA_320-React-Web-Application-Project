@@ -15,11 +15,13 @@ export default function Form (props) {
   const handleSubmit = (event) => {
     // Prevent page from refreshing on form submission
     event.preventDefault();
-    let search = formData.searchterm;
+    let search;
     // Pass the search term to pokemonSearch prop, which is App's getPokemon function
-    // Check if the value is a number
+    // Check if the value is not a number
     if (isNaN(formData.searchterm)) {
-      search = formData.searchterm.toLowerCase()
+      search = formData.searchterm.toLowerCase();
+    } else {
+      search = formData.searchterm;
     }
     props.pokemonSearch(search);
   };
