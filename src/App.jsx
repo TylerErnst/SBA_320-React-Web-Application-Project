@@ -30,7 +30,7 @@ export default function App() {
 
    // This will run on the first render but not on subsquent renders
    useEffect(() => {
-    getPokemon("pikachu");
+    getPokemon(Math.floor(Math.random() * 1025));
   }, []);
 
   // We pass the getMovie function as a prop called moviesearch
