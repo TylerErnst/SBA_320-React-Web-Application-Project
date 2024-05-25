@@ -3,12 +3,19 @@ import Gallery from './Gallery'
 export default function MovieDisplay({ pokemon }){
   // Function to return loaded JSX
   const loaded = () => {
+
+    const capitalizeFirstLetter = (string) => {
+      return string.charAt(0).toUpperCase() + string.slice(1);
+    };
+
     console.log(pokemon)
     return (
       <>
-        <h1>{pokemon.name}</h1>
-        <h2>{pokemon.id}</h2>
-        <h2>{pokemon.types[0].type.name}</h2>
+        <h1>{capitalizeFirstLetter(pokemon.name)}</h1>
+        <h2>Pokedex Number: {pokemon.id}</h2>
+        {pokemon.types.map((typeInfo, index) => (
+          <h2 key={index}>Type {index+1}: {capitalizeFirstLetter(typeInfo.type.name)}</h2>
+        ))}
         <img src={pokemon.sprites.front_default} alt='pokemon-picture' />
         <Gallery pokemon={pokemon}/>
       </>

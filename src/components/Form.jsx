@@ -34,6 +34,7 @@ export default function Form (props) {
           name="searchterm"
           onChange={handleChange}
           value={formData.searchterm}
+          placeholder="Search by name or number"
         />
         <input type="submit" value="submit" />
       </form>
