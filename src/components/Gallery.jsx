@@ -13,8 +13,8 @@ const Gallery = ({ pokemon }) => {
       for (let key in obj) {
         if (typeof obj[key] === 'string') {
           rowItems.push(
-            <div key={count++}>
-              <img src={obj[key]} alt={key} />
+            <div key={count++} style={{ flex: 1 }}>
+              <img src={obj[key]} alt={key} style={{ width: '100%' }} />
               <p style={{ textAlign: 'center', marginTop: '5px' }}>
                 {parentKey ? `${parentKey}.${key}` : key}
               </p>
