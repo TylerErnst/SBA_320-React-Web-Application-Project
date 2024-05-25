@@ -15,8 +15,13 @@ export default function Form (props) {
   const handleSubmit = (event) => {
     // Prevent page from refreshing on form submission
     event.preventDefault();
-    // Pass the search term to moviesearch prop, which is App's getMovie function
-    props.pokemonSearch(formData.searchterm);
+    let search = formData.searchterm;
+    // Pass the search term to pokemonSearch prop, which is App's getPokemon function
+    // Check if the value is a number
+    if (isNaN(formData.searchterm)) {
+      search = formData.searchterm.toLowerCase()
+    }
+    props.pokemonSearch(search);
   };
 
   return (
