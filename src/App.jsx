@@ -36,8 +36,9 @@ export default function App() {
   // We pass pokemon as props to pokemon display
   return (
     <div className="App">
-      <Form pokemonSearch={getPokemon} />
-      <PokemonDisplay pokemon={pokemon} />
+      hi
+      {/* <Form pokemonSearch={getPokemon} /> */}
+      {/* <PokemonDisplay pokemon={pokemon} /> */}
     </div>
   );
 }
